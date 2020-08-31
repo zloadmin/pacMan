@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E721EEF524FD39EB0061A44D /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E721EEF324FD39EB0061A44D /* Game.cpp */; };
 		E7470B1C24FD306D004545ED /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = E7470B1B24FD306D004545ED /* ResourcePath.mm */; };
 		E7470B1F24FD306D004545ED /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E7470B1E24FD306D004545ED /* main.cpp */; };
 		E7470B2224FD306D004545ED /* cute_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E7470B2124FD306D004545ED /* cute_image.jpg */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E721EEF324FD39EB0061A44D /* Game.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
+		E721EEF424FD39EB0061A44D /* Game.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Game.hpp; sourceTree = "<group>"; };
 		E7470B1624FD306D004545ED /* PacMan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PacMan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7470B1A24FD306D004545ED /* PacMan-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "PacMan-Info.plist"; path = "../PacMan-Info.plist"; sourceTree = "<group>"; };
 		E7470B1B24FD306D004545ED /* ResourcePath.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourcePath.mm; sourceTree = "<group>"; };
@@ -62,6 +65,8 @@
 				E7470B1E24FD306D004545ED /* main.cpp */,
 				E7470B2024FD306D004545ED /* Resources */,
 				E7470B1924FD306D004545ED /* Supporting Files */,
+				E721EEF324FD39EB0061A44D /* Game.cpp */,
+				E721EEF424FD39EB0061A44D /* Game.hpp */,
 			);
 			path = PacMan;
 			sourceTree = "<group>";
@@ -177,6 +182,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E721EEF524FD39EB0061A44D /* Game.cpp in Sources */,
 				E7470B1F24FD306D004545ED /* main.cpp in Sources */,
 				E7470B1C24FD306D004545ED /* ResourcePath.mm in Sources */,
 			);
@@ -276,9 +282,11 @@
 		E7470B2C24FD306D004545ED /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "PacMan/PacMan-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				OTHER_CODE_SIGN_FLAGS = "--deep";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -286,9 +294,11 @@
 		E7470B2D24FD306D004545ED /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "PacMan/PacMan-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				OTHER_CODE_SIGN_FLAGS = "--deep";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
