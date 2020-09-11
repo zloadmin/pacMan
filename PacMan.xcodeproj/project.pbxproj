@@ -14,6 +14,7 @@
 		E7470B2424FD306D004545ED /* nice_music.ogg in Resources */ = {isa = PBXBuildFile; fileRef = E7470B2324FD306D004545ED /* nice_music.ogg */; };
 		E7470B2624FD306D004545ED /* sansation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7470B2524FD306D004545ED /* sansation.ttf */; };
 		E7470B2824FD306D004545ED /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E7470B2724FD306D004545ED /* icon.png */; };
+		E7D586FD250B7CDB00B979CB /* GameState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E7D586FB250B7CDB00B979CB /* GameState.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,8 @@
 		E7470B2324FD306D004545ED /* nice_music.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; name = nice_music.ogg; path = ../nice_music.ogg; sourceTree = "<group>"; };
 		E7470B2524FD306D004545ED /* sansation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = sansation.ttf; path = ../sansation.ttf; sourceTree = "<group>"; };
 		E7470B2724FD306D004545ED /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../icon.png; sourceTree = "<group>"; };
+		E7D586FB250B7CDB00B979CB /* GameState.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GameState.cpp; sourceTree = "<group>"; };
+		E7D586FC250B7CDB00B979CB /* GameState.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GameState.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				E7470B1924FD306D004545ED /* Supporting Files */,
 				E721EEF324FD39EB0061A44D /* Game.cpp */,
 				E721EEF424FD39EB0061A44D /* Game.hpp */,
+				E7D586FB250B7CDB00B979CB /* GameState.cpp */,
+				E7D586FC250B7CDB00B979CB /* GameState.hpp */,
 			);
 			path = PacMan;
 			sourceTree = "<group>";
@@ -183,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E721EEF524FD39EB0061A44D /* Game.cpp in Sources */,
+				E7D586FD250B7CDB00B979CB /* GameState.cpp in Sources */,
 				E7470B1F24FD306D004545ED /* main.cpp in Sources */,
 				E7470B1C24FD306D004545ED /* ResourcePath.mm in Sources */,
 			);
