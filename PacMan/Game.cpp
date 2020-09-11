@@ -6,12 +6,20 @@
 //  Copyright © 2020 Vladimir. All rights reserved.
 //
 #include <iostream>
+#include <string>
 #include "Game.hpp"
 #include <SFML/Graphics.hpp>
-
+const std::string ASSERT_DIR = "/Users/vladimir/Projects/PacMan/PacMan/PacMan/Resources/";
 Game::Game()
 :m_window(sf::VideoMode(640, 480), "PacMan")
 {
+    if(!m_font.loadFromFile(ASSERT_DIR + "/font.ttf"))
+    throw std::runtime_error("Unable to load font.ttf file");
+    if(!m_logo.loadFromFile(ASSERT_DIR + "logo.png"))
+    throw std::runtime_error("Unable to load logo.png file");
+    if(!m_texture.loadFromFile(ASSERT_DIR + "texture.png"))
+    throw std::runtime_error("Unable to load texture.png file");
+    
     m_gameStates[GameState::NoCoin] = new NoCoinState(this);
     m_gameStates[GameState::GetReady] = new GetReadyState(this);
     m_gameStates[GameState::Playing] = new PlayingState(this);
@@ -28,6 +36,7 @@ Game::~Game()
 }
 void Game::run()
 {
+    sf::Clock frameClock;
     
     while (m_window.isOpen()) {
         sf::Event event;
@@ -50,12 +59,25 @@ void Game::run()
                 
             }
         }
-        m_currentState->update(sf::seconds(1));
+        m_currentState->update(frameClock.restart());
         m_window.clear();
         m_currentState->draw(m_window);
         m_window.display();
     }
     
+}
+
+sf::Font& Game::getFont()
+{
+    return m_font;
+}
+sf::Texture& Game::getLogo()
+{
+    return m_logo;
+}
+sf::Texture& Game::getTexture()
+{
+    return m_texture;
 }
 
 void Game::changeGameState(GameState::State gameState) {

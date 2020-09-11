@@ -49,6 +49,10 @@ public:
     void moveStick(sf::Vector2i direction);
     void update(sf::Time delta);
     void draw(sf::RenderWindow& window);
+private:
+    sf::Text m_text;
+    sf::Sprite m_sprite;
+    bool m_DisplayText;
     
 };
 
@@ -60,6 +64,8 @@ public:
     void moveStick(sf::Vector2i direction);
     void update(sf::Time delta);
     void draw(sf::RenderWindow& window);
+private:
+    sf::Text m_text;
     
 };
 
@@ -82,6 +88,8 @@ public:
     void moveStick(sf::Vector2i direction);
     void update(sf::Time delta);
     void draw(sf::RenderWindow& window);
+private:
+    sf::Text m_text;
     
 };
 
@@ -93,6 +101,10 @@ public:
     void moveStick(sf::Vector2i direction);
     void update(sf::Time delta);
     void draw(sf::RenderWindow& window);
+private:
+    sf::Text m_text;
+    sf::Time m_countDown;
+    sf::Text m_countDownText;
     
 };
 

@@ -8,27 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		E721EEF524FD39EB0061A44D /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E721EEF324FD39EB0061A44D /* Game.cpp */; };
+		E73BE26A250BACDA00767FBF /* font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E73BE265250BACDA00767FBF /* font.ttf */; };
+		E73BE26B250BACDA00767FBF /* levels in Resources */ = {isa = PBXBuildFile; fileRef = E73BE266250BACDA00767FBF /* levels */; };
+		E73BE26C250BACDA00767FBF /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E73BE267250BACDA00767FBF /* logo.png */; };
+		E73BE26D250BACDA00767FBF /* Pac Woman.png in Resources */ = {isa = PBXBuildFile; fileRef = E73BE268250BACDA00767FBF /* Pac Woman.png */; };
+		E73BE26E250BACDA00767FBF /* texture.png in Resources */ = {isa = PBXBuildFile; fileRef = E73BE269250BACDA00767FBF /* texture.png */; };
 		E7470B1C24FD306D004545ED /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = E7470B1B24FD306D004545ED /* ResourcePath.mm */; };
 		E7470B1F24FD306D004545ED /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E7470B1E24FD306D004545ED /* main.cpp */; };
-		E7470B2224FD306D004545ED /* cute_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E7470B2124FD306D004545ED /* cute_image.jpg */; };
-		E7470B2424FD306D004545ED /* nice_music.ogg in Resources */ = {isa = PBXBuildFile; fileRef = E7470B2324FD306D004545ED /* nice_music.ogg */; };
-		E7470B2624FD306D004545ED /* sansation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7470B2524FD306D004545ED /* sansation.ttf */; };
-		E7470B2824FD306D004545ED /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E7470B2724FD306D004545ED /* icon.png */; };
 		E7D586FD250B7CDB00B979CB /* GameState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E7D586FB250B7CDB00B979CB /* GameState.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E721EEF324FD39EB0061A44D /* Game.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
 		E721EEF424FD39EB0061A44D /* Game.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Game.hpp; sourceTree = "<group>"; };
+		E73BE265250BACDA00767FBF /* font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = font.ttf; sourceTree = "<group>"; };
+		E73BE266250BACDA00767FBF /* levels */ = {isa = PBXFileReference; lastKnownFileType = folder; path = levels; sourceTree = "<group>"; };
+		E73BE267250BACDA00767FBF /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		E73BE268250BACDA00767FBF /* Pac Woman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pac Woman.png"; sourceTree = "<group>"; };
+		E73BE269250BACDA00767FBF /* texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texture.png; sourceTree = "<group>"; };
 		E7470B1624FD306D004545ED /* PacMan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PacMan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7470B1A24FD306D004545ED /* PacMan-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "PacMan-Info.plist"; path = "../PacMan-Info.plist"; sourceTree = "<group>"; };
 		E7470B1B24FD306D004545ED /* ResourcePath.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourcePath.mm; sourceTree = "<group>"; };
 		E7470B1D24FD306D004545ED /* ResourcePath.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ResourcePath.hpp; sourceTree = "<group>"; };
 		E7470B1E24FD306D004545ED /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		E7470B2124FD306D004545ED /* cute_image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cute_image.jpg; path = ../cute_image.jpg; sourceTree = "<group>"; };
-		E7470B2324FD306D004545ED /* nice_music.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; name = nice_music.ogg; path = ../nice_music.ogg; sourceTree = "<group>"; };
-		E7470B2524FD306D004545ED /* sansation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = sansation.ttf; path = ../sansation.ttf; sourceTree = "<group>"; };
-		E7470B2724FD306D004545ED /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../icon.png; sourceTree = "<group>"; };
 		E7D586FB250B7CDB00B979CB /* GameState.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GameState.cpp; sourceTree = "<group>"; };
 		E7D586FC250B7CDB00B979CB /* GameState.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GameState.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,10 +89,11 @@
 		E7470B2024FD306D004545ED /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				E7470B2124FD306D004545ED /* cute_image.jpg */,
-				E7470B2324FD306D004545ED /* nice_music.ogg */,
-				E7470B2524FD306D004545ED /* sansation.ttf */,
-				E7470B2724FD306D004545ED /* icon.png */,
+				E73BE265250BACDA00767FBF /* font.ttf */,
+				E73BE266250BACDA00767FBF /* levels */,
+				E73BE267250BACDA00767FBF /* logo.png */,
+				E73BE268250BACDA00767FBF /* Pac Woman.png */,
+				E73BE269250BACDA00767FBF /* texture.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -153,10 +156,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7470B2824FD306D004545ED /* icon.png in Resources */,
-				E7470B2624FD306D004545ED /* sansation.ttf in Resources */,
-				E7470B2424FD306D004545ED /* nice_music.ogg in Resources */,
-				E7470B2224FD306D004545ED /* cute_image.jpg in Resources */,
+				E73BE26E250BACDA00767FBF /* texture.png in Resources */,
+				E73BE26A250BACDA00767FBF /* font.ttf in Resources */,
+				E73BE26B250BACDA00767FBF /* levels in Resources */,
+				E73BE26D250BACDA00767FBF /* Pac Woman.png in Resources */,
+				E73BE26C250BACDA00767FBF /* logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
