@@ -13,6 +13,11 @@
 		E73BE26C250BACDA00767FBF /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E73BE267250BACDA00767FBF /* logo.png */; };
 		E73BE26D250BACDA00767FBF /* Pac Woman.png in Resources */ = {isa = PBXBuildFile; fileRef = E73BE268250BACDA00767FBF /* Pac Woman.png */; };
 		E73BE26E250BACDA00767FBF /* texture.png in Resources */ = {isa = PBXBuildFile; fileRef = E73BE269250BACDA00767FBF /* texture.png */; };
+		E73BE271250CEDAF00767FBF /* Character.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E73BE26F250CEDAF00767FBF /* Character.cpp */; };
+		E73BE274250CEDE300767FBF /* Dot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E73BE272250CEDE300767FBF /* Dot.cpp */; };
+		E73BE277250CEDFB00767FBF /* Bonus.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E73BE275250CEDFB00767FBF /* Bonus.cpp */; };
+		E73BE27A250CEE0D00767FBF /* PacMan.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E73BE278250CEE0D00767FBF /* PacMan.cpp */; };
+		E73BE27D250CEE1C00767FBF /* Ghost.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E73BE27B250CEE1C00767FBF /* Ghost.cpp */; };
 		E7470B1C24FD306D004545ED /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = E7470B1B24FD306D004545ED /* ResourcePath.mm */; };
 		E7470B1F24FD306D004545ED /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E7470B1E24FD306D004545ED /* main.cpp */; };
 		E7D586FD250B7CDB00B979CB /* GameState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E7D586FB250B7CDB00B979CB /* GameState.cpp */; };
@@ -26,6 +31,16 @@
 		E73BE267250BACDA00767FBF /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		E73BE268250BACDA00767FBF /* Pac Woman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pac Woman.png"; sourceTree = "<group>"; };
 		E73BE269250BACDA00767FBF /* texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texture.png; sourceTree = "<group>"; };
+		E73BE26F250CEDAF00767FBF /* Character.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Character.cpp; sourceTree = "<group>"; };
+		E73BE270250CEDAF00767FBF /* Character.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Character.hpp; sourceTree = "<group>"; };
+		E73BE272250CEDE300767FBF /* Dot.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Dot.cpp; sourceTree = "<group>"; };
+		E73BE273250CEDE300767FBF /* Dot.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Dot.hpp; sourceTree = "<group>"; };
+		E73BE275250CEDFB00767FBF /* Bonus.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Bonus.cpp; sourceTree = "<group>"; };
+		E73BE276250CEDFB00767FBF /* Bonus.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Bonus.hpp; sourceTree = "<group>"; };
+		E73BE278250CEE0D00767FBF /* PacMan.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PacMan.cpp; sourceTree = "<group>"; };
+		E73BE279250CEE0D00767FBF /* PacMan.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PacMan.hpp; sourceTree = "<group>"; };
+		E73BE27B250CEE1C00767FBF /* Ghost.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Ghost.cpp; sourceTree = "<group>"; };
+		E73BE27C250CEE1C00767FBF /* Ghost.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Ghost.hpp; sourceTree = "<group>"; };
 		E7470B1624FD306D004545ED /* PacMan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PacMan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7470B1A24FD306D004545ED /* PacMan-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "PacMan-Info.plist"; path = "../PacMan-Info.plist"; sourceTree = "<group>"; };
 		E7470B1B24FD306D004545ED /* ResourcePath.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourcePath.mm; sourceTree = "<group>"; };
@@ -74,6 +89,16 @@
 				E721EEF424FD39EB0061A44D /* Game.hpp */,
 				E7D586FB250B7CDB00B979CB /* GameState.cpp */,
 				E7D586FC250B7CDB00B979CB /* GameState.hpp */,
+				E73BE26F250CEDAF00767FBF /* Character.cpp */,
+				E73BE270250CEDAF00767FBF /* Character.hpp */,
+				E73BE272250CEDE300767FBF /* Dot.cpp */,
+				E73BE273250CEDE300767FBF /* Dot.hpp */,
+				E73BE275250CEDFB00767FBF /* Bonus.cpp */,
+				E73BE276250CEDFB00767FBF /* Bonus.hpp */,
+				E73BE278250CEE0D00767FBF /* PacMan.cpp */,
+				E73BE279250CEE0D00767FBF /* PacMan.hpp */,
+				E73BE27B250CEE1C00767FBF /* Ghost.cpp */,
+				E73BE27C250CEE1C00767FBF /* Ghost.hpp */,
 			);
 			path = PacMan;
 			sourceTree = "<group>";
@@ -193,8 +218,13 @@
 			files = (
 				E721EEF524FD39EB0061A44D /* Game.cpp in Sources */,
 				E7D586FD250B7CDB00B979CB /* GameState.cpp in Sources */,
+				E73BE277250CEDFB00767FBF /* Bonus.cpp in Sources */,
+				E73BE27A250CEE0D00767FBF /* PacMan.cpp in Sources */,
 				E7470B1F24FD306D004545ED /* main.cpp in Sources */,
+				E73BE274250CEDE300767FBF /* Dot.cpp in Sources */,
+				E73BE271250CEDAF00767FBF /* Character.cpp in Sources */,
 				E7470B1C24FD306D004545ED /* ResourcePath.mm in Sources */,
+				E73BE27D250CEE1C00767FBF /* Ghost.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
