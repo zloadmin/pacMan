@@ -11,18 +11,24 @@
 
 #include "Character.hpp"
 #include "PacMan.hpp"
+#include "Animator.hpp"
+
 class Ghost : public Character
 {
 public:
     Ghost(sf::Texture texture);
     void setWeak(sf::Time duration);
     bool isWeak() const;
+    void update(sf::Time delta);
     
     enum State
     {
         Strong,
         Weak
     };
+
+
+    
 private:
     
     bool m_isWeak;
@@ -30,6 +36,11 @@ private:
     sf::Sprite m_visual;
     
     void draw(sf::RenderTarget& target, sf::RenderStates states) const;
+    
+    PacMan* m_pacMan;
+    
+    Animator m_strongAnimator;
+    Animator m_weakAnimator;
     
 };
 

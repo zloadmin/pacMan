@@ -8,7 +8,8 @@
 
 #include "GameState.hpp"
 #include "Game.hpp"
-
+#include "PacMan.hpp"
+#include "Ghost.hpp"
 
 template <typename T>
 void centerOrigin(T& drawable) {
@@ -53,8 +54,11 @@ GetReadyState::GetReadyState(Game* game)
 }
 PlayingState::PlayingState(Game* game)
 : GameState(game)
+, m_pacMan(game->getTexture())
+, m_ghost(game->getTexture())
 {
-    
+    m_pacMan.move(100, 100);
+    m_ghost.move(200, 200);
 }
 WonState::WonState(Game* game)
 : GameState(game)
@@ -126,20 +130,23 @@ void GetReadyState::draw(sf::RenderWindow& window){
 }
 
 void PlayingState::insertCoin(){
+    m_pacMan.die();
     
 }
 void PlayingState::pressButton(){
-    
+    m_ghost.setWeak(sf::seconds(3));
 }
 void PlayingState::moveStick(sf::Vector2i direction){
     
     
 }
 void PlayingState::update(sf::Time delta){
-    
+    m_pacMan.update(delta);
+    m_ghost.update(delta);
 }
 void PlayingState::draw(sf::RenderWindow& window){
-    
+    window.draw(m_pacMan);
+    window.draw(m_ghost);
 }
 
 void WonState::insertCoin(){

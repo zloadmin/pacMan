@@ -20,6 +20,7 @@
 		E73BE27D250CEE1C00767FBF /* Ghost.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E73BE27B250CEE1C00767FBF /* Ghost.cpp */; };
 		E7470B1C24FD306D004545ED /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = E7470B1B24FD306D004545ED /* ResourcePath.mm */; };
 		E7470B1F24FD306D004545ED /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E7470B1E24FD306D004545ED /* main.cpp */; };
+		E7932779250F927C00AA629D /* Animator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E7932777250F927C00AA629D /* Animator.cpp */; };
 		E7D586FD250B7CDB00B979CB /* GameState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E7D586FB250B7CDB00B979CB /* GameState.cpp */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +47,8 @@
 		E7470B1B24FD306D004545ED /* ResourcePath.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourcePath.mm; sourceTree = "<group>"; };
 		E7470B1D24FD306D004545ED /* ResourcePath.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ResourcePath.hpp; sourceTree = "<group>"; };
 		E7470B1E24FD306D004545ED /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		E7932777250F927C00AA629D /* Animator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Animator.cpp; sourceTree = "<group>"; };
+		E7932778250F927C00AA629D /* Animator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Animator.hpp; sourceTree = "<group>"; };
 		E7D586FB250B7CDB00B979CB /* GameState.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GameState.cpp; sourceTree = "<group>"; };
 		E7D586FC250B7CDB00B979CB /* GameState.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GameState.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,6 +102,8 @@
 				E73BE279250CEE0D00767FBF /* PacMan.hpp */,
 				E73BE27B250CEE1C00767FBF /* Ghost.cpp */,
 				E73BE27C250CEE1C00767FBF /* Ghost.hpp */,
+				E7932777250F927C00AA629D /* Animator.cpp */,
+				E7932778250F927C00AA629D /* Animator.hpp */,
 			);
 			path = PacMan;
 			sourceTree = "<group>";
@@ -216,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7932779250F927C00AA629D /* Animator.cpp in Sources */,
 				E721EEF524FD39EB0061A44D /* Game.cpp in Sources */,
 				E7D586FD250B7CDB00B979CB /* GameState.cpp in Sources */,
 				E73BE277250CEDFB00767FBF /* Bonus.cpp in Sources */,

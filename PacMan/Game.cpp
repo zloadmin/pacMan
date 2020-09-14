@@ -26,7 +26,7 @@ Game::Game()
     m_gameStates[GameState::Won] = new WonState(this);
     m_gameStates[GameState::Lost] = new LostState(this);
     
-    changeGameState(GameState::NoCoin);
+    changeGameState(GameState::Playing);
 }
 Game::~Game()
 {

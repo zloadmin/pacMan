@@ -10,6 +10,8 @@
 #define GameState_hpp
 
 #include <stdio.h>
+#include "PacMan.hpp";
+#include "Ghost.hpp";
 #include <SFML/Graphics.hpp>
 
 class Game;
@@ -77,6 +79,9 @@ public:
     void moveStick(sf::Vector2i direction);
     void update(sf::Time delta);
     void draw(sf::RenderWindow& window);
+private:
+    PacMan m_pacMan;
+    Ghost m_ghost;
     
 };
 
