@@ -59,6 +59,8 @@ PlayingState::PlayingState(Game* game)
 {
     m_pacMan.move(100, 100);
     m_ghost.move(200, 200);
+    m_maze.loadLevel("level");
+    
 }
 WonState::WonState(Game* game)
 : GameState(game)
@@ -147,6 +149,7 @@ void PlayingState::update(sf::Time delta){
 void PlayingState::draw(sf::RenderWindow& window){
     window.draw(m_pacMan);
     window.draw(m_ghost);
+    window.draw(m_maze);
 }
 
 void WonState::insertCoin(){

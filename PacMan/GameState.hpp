@@ -12,6 +12,7 @@
 #include <stdio.h>
 #include "PacMan.hpp";
 #include "Ghost.hpp";
+#include "Maze.hpp";
 #include <SFML/Graphics.hpp>
 
 class Game;
@@ -82,7 +83,7 @@ public:
 private:
     PacMan m_pacMan;
     Ghost m_ghost;
-    
+    Maze m_maze;
 };
 
 class WonState : public GameState {
