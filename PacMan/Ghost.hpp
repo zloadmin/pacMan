@@ -16,7 +16,7 @@
 class Ghost : public Character
 {
 public:
-    Ghost(sf::Texture texture);
+    Ghost(sf::Texture& texture);
     void setWeak(sf::Time duration);
     bool isWeak() const;
     void update(sf::Time delta);

@@ -10,9 +10,9 @@
 #define GameState_hpp
 
 #include <stdio.h>
-#include "PacMan.hpp";
-#include "Ghost.hpp";
-#include "Maze.hpp";
+#include "PacMan.hpp"
+#include "Ghost.hpp"
+#include "Maze.hpp"
 #include <SFML/Graphics.hpp>
 
 class Game;
@@ -75,14 +75,16 @@ private:
 class PlayingState : public GameState {
 public:
     PlayingState(Game* game);
+    ~PlayingState();
     void insertCoin();
     void pressButton();
     void moveStick(sf::Vector2i direction);
     void update(sf::Time delta);
     void draw(sf::RenderWindow& window);
 private:
-    PacMan m_pacMan;
-    Ghost m_ghost;
+    PacMan* m_pacMan;
+    std::vector<Ghost*> m_ghosts;
+//    Ghost m_ghost;
     Maze m_maze;
 };
 

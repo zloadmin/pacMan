@@ -8,6 +8,7 @@
 #include "Maze.hpp"
 #include "Dot.hpp"
 #include <iostream>
+#include <cmath>
 
 const std::string ASSERT_DIR = "/Users/vladimir/Projects/PacMan/PacMan/PacMan/Resources/";
 
@@ -16,7 +17,7 @@ Maze::Maze()
 {
     
 }
-void Maze::loadLevel(std::string name)
+void Maze::loadLevel(std::string name) 
 {
     sf::Image levelData;
     
@@ -27,8 +28,8 @@ void Maze::loadLevel(std::string name)
     if(m_mazeSize.x < 15 && m_mazeSize.y < 15)
         throw std::runtime_error("The load level os too small. Minimal 15 cells");
     
-    for (unsigned int y; y < m_mazeSize.y; y++) {
-        for (unsigned int x; x < m_mazeSize.x; x++) {
+    for (unsigned int y = 0; y < m_mazeSize.y; y++) {
+        for (unsigned int x = 0; x < m_mazeSize.x; x++) {
             sf::Color cellData = levelData.getPixel(x, y);
             if (cellData == sf::Color::Black)
             {
@@ -60,7 +61,7 @@ void Maze::loadLevel(std::string name)
             }
         }
     }
-    
+    std::cout << "loadLevel";
     m_renderTexture.create(32 * m_mazeSize.x, 32* m_mazeSize.y);
     m_renderTexture.clear(sf::Color::Black);
     
@@ -69,11 +70,6 @@ void Maze::loadLevel(std::string name)
     
     for (unsigned int i = 0; i < m_mazeData.size(); i++) {
         sf::Vector2i position = indexToPosition(i);
-        std::cout << i << std::endl;
-        std::cout << position.x << std::endl;
-        std::cout << position.y << std::endl;
-        std::cout << "" << std::endl;
-        
         if(m_mazeData[i] == Wall) {
             sf::RectangleShape wall;
             wall.setSize(sf::Vector2f(32, 32));
@@ -93,10 +89,7 @@ void Maze::draw(sf::RenderTarget& target, sf::RenderStates states) const
     
     for (unsigned int i = 0; i < m_mazeData.size(); i++) {
         sf::Vector2i position = indexToPosition(i);
-        std::cout << i << std::endl;
-        std::cout << position.x << std::endl;
-        std::cout << position.y << std::endl;
-        std::cout << "" << std::endl;
+        
         
         if(m_mazeData[i] == Dot) {
             dot.setPosition(32*position.x+16, 32*position.y+16);
@@ -128,4 +121,30 @@ sf::Vector2i Maze::indexToPosition(std::size_t index) const
     position.y = index / m_mazeSize.x;
     
     return position;
+};
+
+sf::Vector2i Maze::mapPixelToCell(sf::Vector2f pixel) const
+{
+    sf::Vector2i cell;
+    cell.x = std::floor(pixel.x / 32.f);
+    cell.y = std::floor(pixel.y / 32.f);
+
+    return cell;
+}
+
+sf::Vector2f Maze::mapCellToPixel(sf::Vector2i cell) const
+{
+    sf::Vector2f pixel;
+    pixel.x = cell.x * 32 + 16;
+    pixel.y = cell.y * 32 + 16;
+
+    return pixel;
+}
+
+bool Maze::isWall(sf::Vector2i position) const
+{
+    if(position.x < 0 || position.y < 0 || position.x >= m_mazeSize.x ||  position.y >= m_mazeSize.y)
+        return false;
+    
+    return m_mazeData[positionToIndex(position)] == Wall;
 };
